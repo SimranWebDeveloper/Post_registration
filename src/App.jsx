@@ -42,7 +42,7 @@ const App = () => {
     // --------------------
     setData((state)=> ({...state,id:nanoid()}))
     try {
-      fetch("http://localhost:4001/product", {
+      fetch("https://my-post-registration.onrender.com/product", {
         method: "POST",
         body: JSON.stringify(data),
         headers: {
